@@ -1,14 +1,6 @@
 import React from "react";
-import {
-  Form,
-  Select,
-  DatePicker,
-  Checkbox,
-  InputNumber,
-  Input,
-  Button,
-  Flex,
-} from "antd";
+import { Form, Select, DatePicker, Checkbox, Button, Flex } from "antd";
+import ProductTable from "./components/ProductTable";
 import dayjs from "dayjs";
 
 const App = () => {
@@ -70,6 +62,7 @@ const App = () => {
               <Checkbox>Home Delivery</Checkbox>
             </Form.Item>
           </div>
+          <ProductTable />
           <Flex justify="end" gap="large">
             <Form.Item label={null}>
               <Button className="w-28">Reset</Button>
