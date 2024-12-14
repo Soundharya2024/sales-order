@@ -25,14 +25,14 @@ const App = () => {
             <Form.Item
               label="Customer"
               name="Customer"
-              className="sm:w-full w-[300px] md:w-[300px]"
+              className="sm:w-full w-[300px] md:max-w-[300px]"
             >
               <Select placeholder="Choose" />
             </Form.Item>
             <Form.Item
               label="Order Date"
               name="Order_Date"
-              className="sm:w-full w-[300px] md:w-[300px]"
+              className="sm:w-full w-[300px] md:max-w-[300px]"
               initialValue={dayjs()}
               rules={[
                 { required: true, message: "Kindly choose the order date" },
@@ -40,13 +40,13 @@ const App = () => {
             >
               <DatePicker
                 format="DD-MMM-YYYY"
-                className="sm:w-full w-[300px] md:w-[300px]"
+                className="sm:w-full w-[300px] md:max-w-[300px]"
               />
             </Form.Item>
             <Form.Item
               label="Sales Person"
               name="Sales_Person"
-              className="sm:w-full w-[300px] md:w-[300px]"
+              className="sm:w-full w-[300px] md:max-w-[300px]"
               rules={[
                 { required: true, message: "Kindly choose the sales person" },
               ]}
@@ -56,7 +56,7 @@ const App = () => {
             <Form.Item
               label="Branch"
               name="Branch"
-              className="sm:w-full w-[300px] md:w-[300px]"
+              className="sm:w-full w-[300px] md:max-w-[300px]"
               rules={[{ required: true, message: "Kindly select the branch" }]}
             >
               <Select placeholder="Choose" />
